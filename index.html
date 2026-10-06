@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="뷰티 크리에이터이자 디자인 전공자 김유림의 포트폴리오">
+  <title>Kim Yurim — Beauty Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Gowun+Batang:wght@400;700&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="첫 화면으로">Yurim</a>
+    <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="주 메뉴">
+      <a href="#about">About</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="sparkle s1" aria-hidden="true">✦</div><div class="sparkle s2" aria-hidden="true">✦</div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Beauty Creator · Design Student</p>
+        <h1>Everyday,<br><em>Pretty moments</em></h1>
+        <p class="intro">좋아하는 뷰티를 나만의 시선과 감각으로 기록합니다.<br>김유림의 맑고 반짝이는 뷰티 무드.</p>
+        <a class="pill" href="#portfolio">Explore my work <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="halo"></div>
+        <div class="hero-frame"><img src="assets/profile-main.png" alt="김유림 프로필 사진"></div>
+        <span class="hand-note">beauty in<br>my own way ♡</span>
+        <span class="stamp">YURIM<br>CREATIVE<br>STUDIO</span>
+      </div>
+      <div class="scroll-cue"><span>scroll to discover</span><i></i></div>
+    </section>
+
+    <section class="ticker" aria-label="전문 분야"><div>BEAUTY CREATOR · CONTENT DIRECTOR · DESIGN STUDENT · BEAUTY CREATOR · CONTENT DIRECTOR · DESIGN STUDENT ·</div></section>
+
+    <section class="about" id="about">
+      <div class="section-tag reveal">01 / ABOUT ME</div>
+      <div class="about-grid">
+        <div class="about-art reveal">
+          <div class="flower-card"><img src="assets/flower.jpg" alt="물속에 반짝이는 핑크 꽃"></div>
+          <div class="mini-photo"><img src="assets/profile-glasses.png" alt="안경을 쓴 김유림 프로필 사진"></div>
+          <p class="tape">soft &amp; lovely</p><span class="star" aria-hidden="true">✦</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="script-title">Hello, I’m Yurim</p>
+          <h2>아름다움을 발견하고,<br>감각적인 콘텐츠로<br><span>이야기해요.</span></h2>
+          <div class="body-copy">
+            <p>안녕하세요. 뷰티를 사랑하는 디자인 전공자 김유림입니다. 제품이 가진 무드와 매력을 세심하게 발견하고, 릴스와 비주얼 콘텐츠로 표현하는 일을 하고 있어요.</p>
+            <p>기획부터 촬영, 스타일링, 편집까지 직접 진행하며 브랜드의 결에 제 취향을 자연스럽게 더한 콘텐츠를 만듭니다.</p>
+          </div>
+          <div class="facts"><span><b>Major</b>Design Business</span><span><b>Based in</b>Jinju, Korea</span><span><b>Focus</b>Beauty &amp; Design</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-head reveal">
+        <div><div class="section-tag">02 / SELECTED WORK</div><h2>Beauty, framed<br><em>my way.</em></h2></div>
+        <p>프로젝트부터 영상과 SNS 콘텐츠,<br>포스터와 제작물까지 한곳에 담았습니다.</p>
+      </div>
+      <div class="portfolio-filters reveal" role="group" aria-label="포트폴리오 분류">
+        <button class="filter-button active" type="button" data-filter="project" aria-pressed="true">프로젝트</button>
+        <button class="filter-button" type="button" data-filter="video" aria-pressed="false">영상</button>
+        <button class="filter-button" type="button" data-filter="sns" aria-pressed="false">SNS</button>
+        <button class="filter-button" type="button" data-filter="poster" aria-pressed="false">대외활동</button>
+        <button class="filter-button" type="button" data-filter="activity" aria-pressed="false">수상</button>
+      </div>
+      <div class="work-grid" aria-live="polite">
+        <article class="work-card reveal" data-category="project"><div class="image-wrap"><img src="assets/fashion-brand-moodboard.jpg" alt="NOIR BLOOM 패션 브랜드 자체제작 무드보드"><span class="work-type">PROJECT</span></div><div class="work-meta"><div><span>01</span><h3>패션 브랜드 자체제작 무드보드</h3></div><p>BRANDING · MOODBOARD</p></div></article>
+        <article class="work-card reveal" data-category="project"><div class="image-wrap"><img src="assets/beauty-brand-analysis.png" alt="롬앤 뷰티브랜드 분석보드"><span class="work-type">PROJECT</span></div><div class="work-meta"><div><span>02</span><h3>뷰티브랜드 분석보드</h3></div><p>BEAUTY · BRAND ANALYSIS</p></div></article>
+        <article class="work-card reveal" data-category="video" hidden><div class="image-wrap"><img src="assets/beauty.jpg" alt="Y2K 감성 뷰티 영상"><span class="play" aria-hidden="true">▶</span></div><div class="work-meta"><div><span>03</span><h3>Sweet Archive</h3></div><p>VIDEO · REELS</p></div></article>
+        <article class="work-card sns-card reveal" data-category="sns" data-link="https://www.instagram.com/reel/DddzKNyARo2/?stkn=aXluYzd0enB4c3J3" hidden><div class="image-wrap"><img src="assets/sns-banana-treatment.jpeg" alt="프루티드 바나나 헤어 트리트먼트 숏폼 썸네일"><span class="play" aria-hidden="true">↗</span></div><div class="work-meta"><div><span>04</span><h3>바나나 헤어 트리트먼트</h3></div><p>SNS · REELS</p></div></article>
+        <article class="work-card sns-card reveal" data-category="sns" data-link="https://www.instagram.com/reel/DdgkE4wgmgV/?stkn=NGltNTlkd3N5aTl5" hidden><div class="image-wrap"><img src="assets/sns-lip-combination.jpeg" alt="데일리 립 조합 숏폼 썸네일"><span class="play" aria-hidden="true">↗</span></div><div class="work-meta"><div><span>05</span><h3>데일리 립 조합</h3></div><p>SNS · REELS</p></div></article>
+        <article class="work-card sns-card reveal" data-category="sns" data-link="https://www.instagram.com/yubokrim/reel/DdA_mqagu1J/" hidden><div class="image-wrap"><img src="assets/sns-lensme-review.jpeg" alt="렌즈미 글램엣지 렌즈 숏폼 썸네일"><span class="play" aria-hidden="true">↗</span></div><div class="work-meta"><div><span>06</span><h3>렌즈미 글램엣지 리뷰</h3></div><p>SNS · REELS</p></div></article>
+        <article class="work-card sns-card reveal" data-category="sns" data-link="https://www.instagram.com/reel/DddzKNyARo2/?stkn=aXluYzd0enB4c3J3" hidden><div class="image-wrap"><img src="assets/sns-vt-pdrn.jpeg" alt="VT PDRN 에어 클라우드 선스크린 숏폼 썸네일"><span class="play" aria-hidden="true">↗</span></div><div class="work-meta"><div><span>07</span><h3>VT PDRN 선스크린</h3></div><p>SNS · REELS</p></div></article>
+        <article class="work-card reveal" data-category="poster" hidden><div class="image-wrap"><img src="assets/flower.jpg" alt="Blooming Glow 포스터 제작물"><span class="work-type">POSTER</span></div><div class="work-meta"><div><span>08</span><h3>Blooming Glow</h3></div><p>POSTER · GRAPHIC</p></div></article>
+        <article class="work-card reveal" data-category="activity" data-description="전공 졸업생이 회사에서 위기 상황을 마주하고, 재학 시절 배운 수업과 역량을 활용해 문제를 이끌고 해결해 나가는 과정을 담은 전공소개 UCC입니다." data-role="팀장 · 모델 프롬프트 제작 및 추출 · 총괄 관리/진행" data-purpose="전공에서 배우는 수업과 역량이 실제 업무 현장에서 어떻게 활용되는지를 이야기로 보여주어 학과와 전공의 강점을 소개하고자 했습니다." data-process="졸업생이 회사의 위기 상황을 전공 역량으로 해결하는 서사를 구성하고, AI 모델 제작을 위한 프롬프트 설계와 결과물 추출을 담당했습니다. 팀장으로서 프로젝트 전반의 일정과 제작 과정도 관리하고 진행했습니다." data-result="2026년도 ALL about GNU 전공소개 UCC 기획공모전 대상 수상" data-gallery="assets/all-about-gnu-scene-01.png|assets/all-about-gnu-scene-02.png" hidden><div class="image-wrap"><img src="assets/award-all-about-gnu-2026.jpg" alt="2026년도 ALL about GNU 전공소개 UCC 기획공모전 대상 상장"><span class="work-type">AWARD</span></div><div class="work-meta"><div><span>12</span><h3>2026 ALL about GNU 전공소개 UCC</h3></div><p>대상 · AWARD</p></div></article>
+        <article class="work-card reveal" data-category="activity" data-link="https://yulimgim3-del.github.io/Smart-Campus-Planner/" data-description="Claude와 함께 제작한 Kitty Campus Planner로 최우수상을 수상한 앱 제작 실습 프로젝트입니다." hidden><div class="image-wrap"><img src="assets/award-smart-campus-planner.png" alt="Kitty Campus Planner 앱 화면"><span class="work-type">AWARD</span></div><div class="work-meta"><div><span>11</span><h3>Claude 기반 바이브 코딩 입문: AI와 함께하는 앱 제작 실습</h3></div><p>최우수상 · AWARD</p></div></article>
+        <article class="work-card reveal" data-category="activity" data-description="지역 간 진로체험 기회 격차를 줄이기 위해 기획한 중학생 진로 탐색 플랫폼 DREAM SEED입니다." data-role="팀장 · UX/UI 디자인" data-purpose="수도권 인프라에 집중된 진로체험 기회로 발생하는 지역 간 격차를 줄이고, 중학생에게 다양한 직업 정보를 제공하는 것을 목표로 했습니다." data-process="팀을 이끌며 서비스 콘셉트와 정보 구조를 정리하고, 중학생이 쉽고 즐겁게 진로를 탐색할 수 있도록 주요 화면과 사용자 경험을 디자인했습니다." data-result="중학생 진로 탐색 플랫폼 DREAM SEED를 제작했으며, 글로컬 디자인씽킹 문제해결 Lab에서 최우수상을 수상했습니다." data-pdf="assets/dream-seed.pdf" data-gallery="assets/dream-seed-5013.jpeg|assets/dream-seed-5012.jpeg|assets/dream-seed-5011.jpeg|assets/dream-seed-5010.jpeg|assets/dream-seed-5009.jpeg|assets/dream-seed-5008.jpeg|assets/dream-seed-5007.jpeg|assets/dream-seed-5006.jpeg" hidden><div class="image-wrap"><img src="assets/award-design-thinking-lab.jpg" alt="글로컬 디자인씽킹 문제해결 Lab 최우수상 수상 기록"><span class="work-type">AWARD</span></div><div class="work-meta"><div><span>10</span><h3>글로컬 디자인씽킹 문제해결 Lab</h3></div><p>최우수상 · AWARD</p></div></article>
+        <article class="work-card multi-image reveal" data-category="activity" data-description="학교 마스코트를 활용해 마약 예방 메시지를 전달한 UCC로, 2024년도 학생 주도 UCC 기획공모전에서 장려상을 수상했습니다." data-role="팀장 · 영상 편집 · 이미지 제작" data-purpose="친숙한 학교 마스코트를 활용해 마약 예방 메시지를 쉽고 기억에 남게 전달하고자 했습니다." data-process="기존 광고송을 오마주해 마약 예방 캠페인송을 기획하고, 이미지 제작과 영상 편집을 담당했으며 팀장으로서 전반적인 제작을 이끌었습니다." data-result="2024년도 학생 주도 UCC 기획공모전 장려상 수상" data-gallery="assets/award-ucc-2024-certificate.jpeg|assets/award-ucc-2024-ceremony.jpeg|assets/ucc-2024-mascot-01.jpeg|assets/ucc-2024-mascot-02.jpeg" hidden><div class="image-wrap"><img src="assets/award-ucc-2024-certificate.jpeg" alt="2024년도 학생 주도 UCC 기획공모전 장려상 상장"><img src="assets/award-ucc-2024-ceremony.jpeg" alt="2024년도 학생 주도 UCC 기획공모전 장려상 수상 사진"><span class="work-type">AWARD</span></div><div class="work-meta"><div><span>09</span><h3>2024 학생 주도 UCC 기획공모전</h3></div><p>장려상 · AWARD</p></div></article>
+        <p class="work-empty" hidden>수상 내역을 준비 중입니다.</p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="section-tag reveal">03 / WHAT I DO</div>
+      <div class="service-intro reveal"><p class="script-title">Create with me</p><h2>브랜드의 무드를<br>유림의 감도로.</h2></div>
+      <div class="service-list">
+        <div class="service reveal"><span>01</span><h3>Beauty Reels</h3><p>제품의 텍스처와 컬러가 돋보이는 숏폼 영상 기획·촬영·편집</p><i aria-hidden="true">→</i></div>
+        <div class="service reveal"><span>02</span><h3>Brand Collaboration</h3><p>브랜드 메시지와 크리에이터의 취향을 연결하는 협업 콘텐츠</p><i aria-hidden="true">→</i></div>
+        <div class="service reveal"><span>03</span><h3>Visual Direction</h3><p>콘셉트 기획, 소품 스타일링, 무드보드와 비주얼 디렉팅</p><i aria-hidden="true">→</i></div>
+      </div>
+    </section>
+
+    <section class="instagram">
+      <div class="insta-card reveal"><img src="assets/pure-angel.jpg" alt="Pure Angel 네일 팁"><p>daily beauty archive</p></div>
+      <div class="insta-copy reveal"><span>FOLLOW MY JOURNEY</span><h2>More pretty things<br>on Instagram</h2><a href="https://www.instagram.com/yuluvme.x?stkn=MWUwcHlyMjI2eXV4MQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">@yuluvme.x <b aria-hidden="true">→</b></a></div>
+      <div class="insta-card dotted reveal"><img src="assets/blessed-angel.jpg" alt="Blessed Angel 네일 팁"><p>collaboration welcome</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="script-title">Let’s make something pretty</p>
+        <h2>함께 반짝이는 장면을<br>만들어 볼까요?</h2>
+        <p>브랜드 협업, 제품 협찬, 콘텐츠 제작 문의를 기다리고 있어요.</p>
+        <a class="mail" href="mailto:yulzzi0319@naver.com">yulzzi0319@naver.com <span aria-hidden="true">→</span></a>
+      </div>
+      <span class="contact-star cs1" aria-hidden="true">✦</span><span class="contact-star cs2" aria-hidden="true">✦</span>
+    </section>
+
+    <dialog class="work-detail" aria-labelledby="detail-title">
+      <button class="detail-back" type="button" aria-label="포트폴리오로 돌아가기">← Back</button>
+      <div class="detail-layout">
+        <div class="detail-image"></div>
+        <div class="detail-copy">
+          <p class="detail-type"></p>
+          <h2 id="detail-title"></h2>
+          <p class="detail-description">김유림의 시선으로 기획하고 제작한 포트폴리오 작업입니다.</p>
+          <dl class="detail-facts" hidden>
+            <div><dt>담당 역할</dt><dd data-detail="role"></dd></div>
+            <div><dt>작업 목적</dt><dd data-detail="purpose"></dd></div>
+            <div><dt>제작 과정</dt><dd data-detail="process"></dd></div>
+            <div><dt>최종 결과</dt><dd data-detail="result"></dd></div>
+          </dl>
+          <button class="detail-close" type="button">작업 목록으로 돌아가기 <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+  <footer><a class="brand" href="#home">Yurim</a><p>© 2026 KIM YURIM. ALL RIGHTS RESERVED.</p><div><a href="https://www.instagram.com/yuluvme.x?stkn=MWUwcHlyMjI2eXV4MQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">Instagram</a><a href="mailto:yulzzi0319@naver.com">Email</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
