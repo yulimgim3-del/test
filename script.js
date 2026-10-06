@@ -56,9 +56,9 @@ function openDetail(card) {
   const previewImages = [...card.querySelectorAll('.image-wrap img')];
   const gallery = card.dataset.gallery?.split('|').filter(Boolean) || [];
   const pdf = card.dataset.pdf;
-  const cover = pdf?.replace(/\.pdf$/i, '-cover.png');
+  const cover = card.dataset.cover || pdf?.replace(/\.pdf$/i, '-cover.png');
   activeCard = card;
-  const images = gallery.length ? [] : previewImages;
+  const images = gallery.length || pdf ? [] : previewImages;
   const media = images.map((source) => {
     const image = document.createElement('img');
     image.src = source.src;
