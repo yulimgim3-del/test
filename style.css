@@ -26,6 +26,6 @@ body{font-family:'DM Sans','Gowun Batang',serif}.filter-button{font-family:'DM S
 
 .portfolio-filters{justify-content:start}
 
-.image-wrap::after{content:"";position:absolute;inset:0;background:url('assets/portfolio-frame.png') center/100% 100% no-repeat;pointer-events:none;z-index:2}.work-type,.play{z-index:3}
+.work-card[data-category="project"] .image-wrap{padding:12px;background:#fff;box-shadow:0 14px 30px rgba(88,48,63,.1)}.sns-card .image-wrap{padding:8% 8% 21%;background:#fbe8f0}.sns-card .image-wrap::after{content:"";position:absolute;inset:0;background:url('assets/sns-polaroid-frame.png') center/100% 100% no-repeat;pointer-events:none;z-index:2}.work-type,.play{z-index:3}
 
 .emoticon-card .image-wrap{background:#fff7fa}.emoticon-card .image-wrap img{object-fit:contain;padding:clamp(18px,3vw,48px)}.detail-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.detail-links[hidden]{display:none}.detail-links a{display:inline-flex;padding:12px 17px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-size:12px;text-decoration:none;transition:background .2s,color .2s,transform .2s}.detail-links a:hover{background:var(--ink);color:white;transform:translateY(-2px)}.detail-links a:focus-visible{outline:3px solid rgba(237,131,173,.45);outline-offset:3px}
