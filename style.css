@@ -6,7 +6,7 @@
 .portfolio-filters{display:flex;flex-wrap:wrap;gap:10px;margin:-25px 0 45px}.filter-button{border:1px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);padding:11px 19px;font:600 11px 'DM Sans','Noto Sans KR',sans-serif;letter-spacing:.05em;cursor:pointer;transition:background .2s,color .2s,transform .2s}.filter-button:hover{transform:translateY(-2px)}.filter-button:focus-visible{outline:3px solid rgba(237,131,173,.45);outline-offset:3px}.filter-button.active{background:var(--ink);color:white}.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:50px 35px}.work-card,.work-card:nth-child(2){width:auto;margin:0}.work-card[hidden]{display:none}.work-type{position:absolute;left:24px;top:24px;background:rgba(255,255,255,.82);backdrop-filter:blur(8px);border-radius:999px;padding:9px 13px;font-size:9px;letter-spacing:.16em}
 @media(max-width:800px){.portfolio-filters{margin-top:35px}.portfolio-filters .filter-button{flex:1 1 calc(50% - 10px)}.work-grid{display:block}.work-card,.work-card:nth-child(2){width:100%;margin:0 0 60px}}
 
-.brand,.hero h1,.hero h1 em,.portfolio-head h2,.portfolio h2 em,.script-title,.hand-note,.insta-card p,.insta-copy h2,.service h3{font-family:'Bodoni Moda','Gowun Batang',serif;font-style:italic;font-weight:400}
+.brand,.hero h1,.hero h1 em,.portfolio-head h2,.portfolio h2 em,.script-title,.hand-note,.insta-card p,.insta-copy h2,.service h3{font-family:'Pixelify Sans','DM Sans',sans-serif;font-style:normal;font-weight:500}
 
 body{font-family:'DM Sans','Gowun Batang',serif}.filter-button{font-family:'DM Sans','Gowun Batang',serif}
 
