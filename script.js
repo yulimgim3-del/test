@@ -127,11 +127,13 @@ function closeDetail() {
 
 workCards.forEach((card) => {
   card.tabIndex = 0;
-  const external = Boolean(card.dataset.link);
+  const targetUrl = card.dataset.pdf || card.dataset.link;
+  const external = Boolean(targetUrl);
   card.setAttribute('role', external ? 'link' : 'button');
-  card.setAttribute('aria-label', `${card.querySelector('h3').textContent} ${external ? '인스타그램에서 보기' : '상세 보기'}`);
+  const actionLabel = card.dataset.pdf ? 'PDF 새 탭에서 보기' : external ? '외부 링크에서 보기' : '상세 보기';
+  card.setAttribute('aria-label', `${card.querySelector('h3').textContent} ${actionLabel}`);
   const activate = () => external
-    ? window.open(card.dataset.link, '_blank', 'noopener,noreferrer')
+    ? window.open(targetUrl, '_blank', 'noopener,noreferrer')
     : openDetail(card);
   card.addEventListener('click', activate);
   card.addEventListener('keydown', (event) => {
