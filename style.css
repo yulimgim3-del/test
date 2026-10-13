@@ -24,4 +24,6 @@ body{font-family:'DM Sans','Gowun Batang',serif}.filter-button{font-family:'DM S
 
 .about-portfolio-link{display:inline-flex;align-items:center;gap:18px;margin-top:30px;padding:13px 20px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-family:'Gowun Batang',serif;font-size:14px;text-decoration:none;transition:background .2s,color .2s,transform .2s}.about-portfolio-link:hover{background:var(--ink);color:white;transform:translateY(-2px)}.about-portfolio-link:focus-visible{outline:3px solid rgba(237,131,173,.45);outline-offset:3px}
 
+.portfolio-filters{justify-content:start}
+
 .emoticon-card .image-wrap{background:#fff7fa}.emoticon-card .image-wrap img{object-fit:contain;padding:clamp(18px,3vw,48px)}.detail-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.detail-links[hidden]{display:none}.detail-links a{display:inline-flex;padding:12px 17px;border:1px solid var(--ink);border-radius:999px;color:var(--ink);font-size:12px;text-decoration:none;transition:background .2s,color .2s,transform .2s}.detail-links a:hover{background:var(--ink);color:white;transform:translateY(-2px)}.detail-links a:focus-visible{outline:3px solid rgba(237,131,173,.45);outline-offset:3px}
