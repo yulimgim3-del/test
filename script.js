@@ -48,6 +48,7 @@ const detailTitle = detail.querySelector('#detail-title');
 const detailType = detail.querySelector('.detail-type');
 const detailDescription = detail.querySelector('.detail-description');
 const detailFacts = detail.querySelector('.detail-facts');
+const detailLinks = detail.querySelector('.detail-links');
 const detailBack = detail.querySelector('.detail-back');
 const detailClose = detail.querySelector('.detail-close');
 let activeCard;
@@ -98,6 +99,17 @@ function openDetail(card) {
   factKeys.forEach((key) => {
     detailFacts.querySelector(`[data-detail="${key}"]`).textContent = card.dataset[key] || '';
   });
+  const links = (card.dataset.links || '').split(';;').filter(Boolean);
+  detailLinks.replaceChildren(...links.map((item) => {
+    const [label, href] = item.split('|');
+    const link = document.createElement('a');
+    link.href = href;
+    link.target = '_blank';
+    link.rel = 'noreferrer';
+    link.textContent = `${label} ↗`;
+    return link;
+  }));
+  detailLinks.hidden = links.length === 0;
   detail.showModal();
   document.body.style.overflow = 'hidden';
   requestAnimationFrame(() => detail.classList.add('open'));
