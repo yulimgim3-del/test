@@ -1,0 +1,6 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+portfolio-maker/gemini-config.js
+*.log
