@@ -9,6 +9,7 @@
     { "src": "assets/**", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/", "dest": "/index.html" },
     { "src": "/api/gemini", "dest": "/api/gemini.mjs" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
