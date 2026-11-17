@@ -28,6 +28,10 @@ node server.mjs
 
 Gemini API 키는 서버에서만 사용되며 `.env.local`은 Git에 업로드되지 않습니다.
 
+## 공개 배포
+
+Vercel에 프로젝트를 연결한 뒤 환경 변수 `GEMINI_API_KEY`를 등록하면 정적 화면과 `api/gemini.mjs` 서버리스 함수가 함께 배포됩니다. API 키는 공개 JavaScript에 포함되지 않습니다.
+
 ## 기술 구성
 
 HTML, CSS, JavaScript, Node.js 내장 HTTP 서버, Gemini API, LocalStorage, Canvas API를 사용했습니다. 외부 런타임 패키지는 필요하지 않습니다.
