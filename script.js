@@ -150,6 +150,20 @@ detail.addEventListener('cancel', (event) => {
   closeDetail();
 });
 
+document.querySelectorAll('.bmmd-card').forEach((card) => {
+  const targetId = card.dataset.target;
+  const goToProject = () => {
+    const targetCard = targetId && document.getElementById(targetId);
+    if (!targetCard) return;
+    const projectFilter = document.querySelector('.filter-button[data-filter="project"]');
+    projectFilter?.click();
+    targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.setTimeout(() => openDetail(targetCard), 350);
+  };
+  card.querySelector('.bmmd-link')?.addEventListener('click', goToProject);
+  card.querySelector('.bmmd-image')?.addEventListener('click', goToProject);
+});
+
 window.addEventListener('scroll', () => {
   const visual = document.querySelector('.hero-visual');
   if (window.innerWidth > 800 && window.scrollY < window.innerHeight) {
